@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-export default function TodoInput(props){
-    const {handleAddTodos} = props
+export default function TodoInput({ handleAddTodos }){
     const [todoValue, setTodoValue] = useState('')
+
     return (
         <header>
          <input placeholder="Enter todo...."
