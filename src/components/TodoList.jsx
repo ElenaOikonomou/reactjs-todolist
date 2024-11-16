@@ -2,16 +2,17 @@ import React from 'react'
 import TodoCard from './TodoCard.jsx'
 
 export default function TodoList(props) {
-   const { todos, handleDeleteTodo } = props
+   const { todos} = props
    
 
 
   return (
     <ul className='main'>
-        {todos.map((item, itemIndex)=>{
+        {todos.map((todo, todoIndex)=>{
             return (
-                <TodoCard {...props} key={itemIndex} >
-                    <p>{item}</p>                
+                <TodoCard {...props} key={todoIndex} index=
+                {todoIndex} >
+                    <p>{todo}</p>                
                 </TodoCard>            
                 
                

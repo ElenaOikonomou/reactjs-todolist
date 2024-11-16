@@ -12,19 +12,23 @@ function handleAddTodos(newTodo){
 
 function handleDeleteTodo(index) {
   const newTodoList = todos.filter((todo, todoIndex) => {
-    return (todoIndex !== index)
+    return todoIndex !== index
   })
   setTodos(newTodoList)
 }
+
+function handleEditTodo(index) {
+
 }
 
-    return (
+
+  return (
    <>
     <TodoInput handleAddTodos={handleAddTodos} />
     <TodoList todos={todos} handleDeleteTodo={handleDeleteTodo}/>
    </>
+    )
   
-  )
-}
+    }
 
 export default App
